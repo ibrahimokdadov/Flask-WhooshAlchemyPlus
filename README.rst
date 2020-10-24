@@ -49,7 +49,7 @@ Let's set up the environment and create our model:
     flask_whooshalchemyplus.init_app(app)    # initialize
 
 Only two steps to get started:
-
+0) Make sure ``SQLALCHEMY_TRACK_MODIFICATIONS=True`` is not False
 1) Set the ``WHOOSH_BASE`` to the path for the whoosh index. If not set, it will default to a directory called 'whoosh_index' in the directory from which the application is run.
 2) Add a ``__searchable__`` field to the model which specifies the fields (as ``str`` s) to be indexed .
 3) set ``WHOOSH_DISABLED`` to ``True`` to disable whoosh indexing .
